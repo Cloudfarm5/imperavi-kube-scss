@@ -1,0 +1,24 @@
+{
+  "name": "kube-scss",
+  "version": "3.0.0",
+  "homepage": "https://github.com/xdemocle/imperavi-kube-scss",
+  "authors": [
+    "Rocco <im@rocco.me>"
+  ],
+  "description": "Kube Professional CSS-framework (SASS porting with scss syntax)",
+  "main": "scss/kube.scss",
+  "keywords": [
+    "kube",
+    "css",
+    "framework",
+    "imperavi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
