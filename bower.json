@@ -6,7 +6,7 @@
     "Rocco <im@rocco.me>"
   ],
   "description": "Kube Professional CSS-framework (SASS porting with scss syntax)",
-  "main": "scss/kube.scss",
+  "main": "css/kube.css",
   "keywords": [
     "kube",
     "css",
