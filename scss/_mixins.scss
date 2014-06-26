@@ -7,7 +7,7 @@
 }
 
 @function strip-unit($num) {
-    @return ($num / ($num * 0 + 1)) / 16;
+    @return ($num / ($num * 0 + 1));
 }
 
 @mixin em($property, $values...) {
