@@ -119,7 +119,6 @@
 //   background-image: url($path);
 //   $at2x_path: ~'${path}.replace(/\.\w+$/, function(match) { return "$2x" + match; })';
 //   @return str-replace($new-string, $old, $new);
-
 //   @media
 //   only screen and (-webkit-min-device-pixel-ratio: 2),
 //   only screen and (   min--moz-device-pixel-ratio: 2),
