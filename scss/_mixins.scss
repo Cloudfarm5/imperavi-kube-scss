@@ -5,9 +5,35 @@
     }
     @return $string;
 }
+
 @function strip-unit($num) {
     @return ($num / ($num * 0 + 1)) / 16;
 }
+
+@mixin em($property, $values...) {
+  $max: length($values);
+  $emValues: '';
+
+  @for $i from 1 through $max {
+    @if nth($values, $i) != 'important' {
+      $value: strip-unit(nth($values, $i));
+      $emValues: #{$emValues + $value}em;
+
+      @if $i < $max {
+        $emValues: #{$emValues + " "};
+      }
+    }
+
+    @if $i == $max {
+      @if nth($values, $i) == 'important' {
+        $emValues: #{$emValues + " !important"};
+      }
+    }
+  }
+
+  #{$property}: $emValues;
+}
+
 @mixin clearfix() {
     &:after {
         content: "";
@@ -15,28 +41,33 @@
         clear: both;
     }
 }
+
 @mixin btn-color($color, $darken: 10%) {
     background: $color;
     &:hover {
         background: darken($color, $darken);
     }
 }
+
 @mixin opacity($opacity: 100) {
     filter: alpha(opacity=$opacity);
     -moz-opacity: $opacity / 100;
     opacity: $opacity / 100;
 }
+
 @mixin selection($r, $g, $b) {
     ::selection { background: rgb($r, $g, $b); }
     ::-moz-selection { background: rgb($r, $g, $b); }
     img::selection { background: transparent; }
     img::-moz-selection { background: transparent;  }
 }
+
 @mixin box-sizing($box-model) {
     -webkit-box-sizing: $box-model;
     -moz-box-sizing: $box-model;
     box-sizing: $box-model;
 }
+
 @mixin vertical-align {
     position: relative;
     top: 50%;
@@ -44,6 +75,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
 @mixin gradient($start: #555, $end: #333) {
     background-color: mix($start, $end, 60%);
     background-image: -moz-linear-gradient(top, $start, $end); // FF 3@mixin 6+
@@ -55,28 +87,34 @@
     // filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@start,@end)); // IE9 and down
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start', endColorstr='$end', GradientType=0); // IE9 and down
 }
+
 @mixin border-top-radius($radius) {
     border-top-right-radius: $radius;
     border-top-left-radius: $radius;
 }
+
 @mixin border-right-radius($radius) {
     border-bottom-right-radius: $radius;
     border-top-right-radius: $radius;
 }
+
 @mixin border-bottom-radius($radius) {
     border-bottom-right-radius: $radius;
     border-bottom-left-radius: $radius;
 }
+
 @mixin border-left-radius($radius) {
     border-bottom-left-radius: $radius;
     border-top-left-radius: $radius;
 }
+
 @mixin bordered($top-color: #eee, $right-color: #eee, $bottom-color: #eee, $left-color: #eee) {
     border-top: 1px solid $top-color;
     border-right: 1px solid $right-color;
     border-bottom: 1px solid $bottom-color;
     border-left: 1px solid $left-color;
 }
+
 // @mixin retina-image($path, $w: auto, $h: auto) {
 //   background-image: url($path);
 //   $at2x_path: ~'${path}.replace(/\.\w+$/, function(match) { return "$2x" + match; })';
@@ -93,16 +131,19 @@
 //     background-size: $w $h;
 //   }
 // }
+
 @mixin transition($transition: all linear .2s) {
     -moz-transition: $transition;
     transition: $transition;
 }
+
 @mixin blur($radius) {
     -webkit-filter: blur($radius);
     -moz-filter: blur($radius);
     -ms-filter: blur($radius);
     filter: blur($radius);
 }
+
 @mixin arrow-top($color: #fff, $size: 5px, $left: 5px) {
     &:after {
         bottom: 100%;
@@ -117,6 +158,7 @@
         left: $left;
     }
 }
+
 @mixin arrow-bottom($color: #fff, $size: 5px, $left: 5px) {
     &:after {
         top: 100%;
@@ -131,6 +173,7 @@
         left: $left;
     }
 }
+
 @mixin arrow-left($color: #fff, $size: 5px, $top: 5px) {
     &:after {
         right: 100%;
@@ -145,6 +188,7 @@
         top: $top;
     }
 }
+
 @mixin arrow-right($color: #fff, $size: 5px, $top: 5px) {
     &:after {
         left: 100%;
@@ -159,6 +203,7 @@
         top: $top;
     }
 }
+
 @mixin close($r: 0, $g: 0, $b: 0) {
     padding: 4px 6px;
     line-height: 1;
@@ -174,6 +219,7 @@
         @include opacity(100);
     }
 }
+
 // Grid
 @mixin block($num) {
     width: (($gridWidth - ($gridGutterWidth * $num)) / $num / ($gridWidth / 100)) * 1%;

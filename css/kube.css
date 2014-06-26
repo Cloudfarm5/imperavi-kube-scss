@@ -231,7 +231,7 @@ body {
   background: white;
   color: #333333;
   font-size: 14px;
-  line-height: 22.4/14em;
+  line-height: 0.1em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 a {
@@ -273,13 +273,13 @@ h4 {
 
 h5 {
   font-size: 14px;
-  line-height: 22.4/14em;
+  line-height: 0.1em;
   margin-bottom: .25em; }
 
 h6 {
   font-size: 12px;
   text-transform: uppercase;
-  line-height: 22.4/14em;
+  line-height: 1.6;
   margin-bottom: .25em; }
 
 /* =Subheading
@@ -330,7 +330,7 @@ dt,
 blockquote,
 td,
 th {
-  line-height: 22.4/14em; }
+  line-height: 1.6; }
 
 ul,
 ol,
@@ -338,7 +338,7 @@ ul ul,
 ol ol,
 ul ol,
 ol ul {
-  margin: 0 0 0 22.4/14em; }
+  margin: 0 0 0 1.6; }
 
 ol ol li {
   list-style-type: lower-alpha; }
@@ -358,7 +358,7 @@ form,
 fieldset,
 figure,
 address {
-  margin-bottom: 22.4/14em; }
+  margin-bottom: 1.6; }
 
 address {
   font-style: normal; }
@@ -373,7 +373,7 @@ blockquote {
   font-size: 16px;
   font-style: italic;
   position: relative;
-  padding-left: 22.4/14em;
+  padding-left: 1.6;
   margin-left: 0;
   border-left: 2px solid #dbdada; }
   blockquote p {
@@ -439,7 +439,7 @@ pre {
   line-height: 1.45em;
   color: #333333;
   background: #f6f6f6;
-  padding: 22.4/14em;
+  padding: 1.6;
   overflow: auto; }
 
 code {
@@ -454,7 +454,7 @@ pre code {
   border: none;
   padding: 0;
   background: none;
-  line-height: 22.4/14em; }
+  line-height: 1.6; }
 
 kbd {
   padding: 2px 6px 1px 6px;
@@ -520,8 +520,8 @@ textarea {
   line-height: 1.35em; }
 
 fieldset {
-  padding: 22.4/14em;
-  margin-bottom: 22.4/14em;
+  padding: 1.6;
+  margin-bottom: 1.6;
   border: 1px solid #dbdada; }
 
 legend {
@@ -558,7 +558,7 @@ table caption {
   margin-top: -1px; }
 
 .units-row {
-  margin-bottom: 22.4/14em; }
+  margin-bottom: 0.1em; }
 
 .width-100, .unit-100 {
   width: 100%; }
@@ -770,7 +770,7 @@ select.unit-100 {
   margin: 0 auto !important; }
 
 .unit-padding {
-  padding: 22.4/14em; }
+  padding: 0.1em; }
 
 .units-padding .unit-100,
 .units-padding .unit-90,
@@ -788,7 +788,7 @@ select.unit-100 {
 .units-padding .unit-25,
 .units-padding .unit-20,
 .units-padding .unit-10 {
-  padding: 22.4/14em; }
+  padding: 0.1em; }
 
 .units-split .unit-90,
 .units-split .unit-80,
@@ -876,7 +876,7 @@ select.unit-100 {
     width: 100%;
     float: none;
     margin-left: 0;
-    margin-bottom: 22.4/14em; }
+    margin-bottom: 0.1em; }
 
   .unit-push-90,
   .unit-push-80,
@@ -956,7 +956,7 @@ select.unit-100 {
   .blocks-6 li {
     height: auto;
     float: left;
-    margin-bottom: 22.4/14em;
+    margin-bottom: 0.1em;
     margin-left: 3%; }
 
 .blocks-2 > li {
@@ -986,7 +986,7 @@ select.unit-100 {
   .blocks-5,
   .blocks-6 {
     margin-left: 0;
-    margin-bottom: 22.4/14em; }
+    margin-bottom: 0.1em; }
 
   .blocks-2 > li,
   .blocks-3 > li,
@@ -1015,7 +1015,7 @@ select.unit-100 {
 -----------------------------------------------------------------------------*/
 /* NavBar */
 .navbar {
-  margin-bottom: 22.4/14em; }
+  margin-bottom: 1.6; }
   .navbar:after {
     content: "";
     display: table;
@@ -1037,11 +1037,11 @@ select.unit-100 {
 
 .navbar ul li {
   float: left;
-  margin-right: 22.4/14em; }
+  margin-right: 1.6; }
 
 .navbar-right ul li {
   margin-right: 0;
-  margin-left: 22.4/14em; }
+  margin-left: 1.6; }
 
 .navbar ul li a,
 .navbar ul li span {
@@ -1074,7 +1074,7 @@ select.unit-100 {
 
 /* Vertical */
 .nav {
-  margin-bottom: 22.4/14em; }
+  margin-bottom: 1.6; }
 
 .nav ul {
   list-style: none;
@@ -1147,7 +1147,7 @@ select.unit-100 {
 
 /* Breadcrumbs */
 .breadcrumbs {
-  margin-bottom: 22.4/14em; }
+  margin-bottom: 1.6; }
   .breadcrumbs:after {
     content: "";
     display: table;
@@ -1282,7 +1282,7 @@ table.table-hovered tbody tr:hover td {
 .table-container {
   width: 100%;
   overflow: auto;
-  margin-bottom: 22.4/14em; }
+  margin-bottom: 1.6; }
   .table-container table {
     margin-bottom: 0; }
   .table-container::-webkit-scrollbar {
@@ -1711,7 +1711,7 @@ input[type="submit"].btn {
   height: 0;
   padding-bottom: 56.25%;
   position: relative;
-  margin-bottom: 22.4/14em; }
+  margin-bottom: 1.6; }
   .video-wrapper iframe, .video-wrapper object, .video-wrapper embed {
     position: absolute;
     top: 0;

@@ -9,7 +9,7 @@
     margin-top: -1px;
 }
 .units-row {
-    margin-bottom: $baseLine / $em;
+    @include em('margin-bottom', $baseLineInEms);
 }
 
 .width-100, .unit-100 { width: 100%;  }
@@ -117,7 +117,7 @@ select.unit-100   { width: 99.4%; }
 }
 
 .unit-padding {
-    padding: $baseLine / $em;
+    @include em('padding', $baseLineInEms);
 }
 .units-padding .unit-100,
 .units-padding .unit-90,
@@ -135,7 +135,7 @@ select.unit-100   { width: 99.4%; }
 .units-padding .unit-25,
 .units-padding .unit-20,
 .units-padding .unit-10 {
-    padding: $baseLine / $em;
+    @include em('padding', $baseLineInEms);
 }
 
 .units-split .unit-90,
@@ -198,7 +198,7 @@ select.unit-100   { width: 99.4%; }
         width: 100%;
         float: none;
         margin-left: 0;
-        margin-bottom: $baseLine/$em;
+        @include em('margin-bottom', $baseLineInEms);
     }
 
     .unit-push-90,

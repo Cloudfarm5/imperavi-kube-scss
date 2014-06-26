@@ -13,16 +13,11 @@ $colorHeadings: #222;
 $gridWidth: 1000;
 $gridGutterWidth: 30;
 
-// Base Type
-$baseFontSize: 14;
-
-// Util
-$em: ($baseFontSize * 1) + em; // outputting ems, e.g. 14 / $em
-
 // Type
+$baseFontSize: 14;
 $baseLineHeight: 1.6;
 $baseLine: $baseFontSize * $baseLineHeight;
-$baseLineInEms: $baseLine / $em;
+$baseLineInEms: $baseLine / $baseFontSize;
 
 // Heading
 $h1FontSize: $baseFontSize + 22px; // 36px
