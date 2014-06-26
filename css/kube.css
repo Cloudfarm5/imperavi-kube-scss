@@ -231,7 +231,7 @@ body {
   background: white;
   color: #333333;
   font-size: 14px;
-  line-height: 0.1em;
+  line-height: 1.6em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 a {
@@ -273,7 +273,7 @@ h4 {
 
 h5 {
   font-size: 14px;
-  line-height: 0.1em;
+  line-height: 1.6em;
   margin-bottom: .25em; }
 
 h6 {
@@ -558,7 +558,7 @@ table caption {
   margin-top: -1px; }
 
 .units-row {
-  margin-bottom: 0.1em; }
+  margin-bottom: 1.6em; }
 
 .width-100, .unit-100 {
   width: 100%; }
@@ -770,7 +770,7 @@ select.unit-100 {
   margin: 0 auto !important; }
 
 .unit-padding {
-  padding: 0.1em; }
+  padding: 1.6em; }
 
 .units-padding .unit-100,
 .units-padding .unit-90,
@@ -788,7 +788,7 @@ select.unit-100 {
 .units-padding .unit-25,
 .units-padding .unit-20,
 .units-padding .unit-10 {
-  padding: 0.1em; }
+  padding: 1.6em; }
 
 .units-split .unit-90,
 .units-split .unit-80,
@@ -876,7 +876,7 @@ select.unit-100 {
     width: 100%;
     float: none;
     margin-left: 0;
-    margin-bottom: 0.1em; }
+    margin-bottom: 1.6em; }
 
   .unit-push-90,
   .unit-push-80,
@@ -956,7 +956,7 @@ select.unit-100 {
   .blocks-6 li {
     height: auto;
     float: left;
-    margin-bottom: 0.1em;
+    margin-bottom: 1.6em;
     margin-left: 3%; }
 
 .blocks-2 > li {
@@ -986,7 +986,7 @@ select.unit-100 {
   .blocks-5,
   .blocks-6 {
     margin-left: 0;
-    margin-bottom: 0.1em; }
+    margin-bottom: 1.6em; }
 
   .blocks-2 > li,
   .blocks-3 > li,
