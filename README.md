@@ -1,9 +1,13 @@
-imperavi-kube-scss (Kube CSS-Framework v3.0 -> SASS porting with scss syntax)
+Imperavi Kube SCSS
 ==================
+
+Kube CSS-Framework v3.0 -> SASS porting with scss syntax.
 
 Kube is a minimalistic CSS-framework for professional developers and designers.
 
 Here’s your most advanced and flexible CSS-framework. Take a look. Kube doesn’t force you into specific styling, Kube doesn’t require rewriting its code; it leaves all of the important decisions to you and your creative genius. Think about Kube as if it was your most reliable helper, who would do your routine job with a smile on his face, so that you can actually concentrate on something big and wonderful.
+
+
 
 ##[Documentation and examples](http://imperavi.com/kube/)
 
