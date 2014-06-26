@@ -7,6 +7,7 @@
   ],
   "description": "Kube Professional CSS-framework (SASS porting with scss syntax)",
   "main": "css/kube.css",
+  "homepage": "http://imperavi.com/",
   "keywords": [
     "kube",
     "css",
