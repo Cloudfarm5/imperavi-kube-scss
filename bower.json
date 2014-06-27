@@ -1,9 +1,9 @@
 {
   "name": "kube-scss",
   "version": "3.0.0",
-  "homepage": "https://github.com/xdemocle/imperavi-kube-scss",
+  "homepage": "https://github.com/Cloudfarm5/imperavi-kube-scss",
   "authors": [
-    "Rocco <im@rocco.me>"
+    "Rocco @ Cloudfarm5 <rocco@cloudfarm5.com>"
   ],
   "description": "Kube Professional CSS-framework (SASS porting with scss syntax)",
   "main": "css/kube.css",
@@ -11,6 +11,7 @@
   "keywords": [
     "kube",
     "css",
+    "scss",
     "framework",
     "imperavi"
   ],
