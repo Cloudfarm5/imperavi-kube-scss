@@ -69,7 +69,7 @@
     height: 0;
     padding-bottom: 56.25%; // ratio 16:9
     position: relative;
-    margin-bottom: $baseLineInEms;
+    @include em('margin-bottom', $baseLineInEms);
     & iframe,
     & object,
     & embed {

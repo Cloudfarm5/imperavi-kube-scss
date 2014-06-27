@@ -3,7 +3,7 @@
 
 /* NavBar */
 .navbar {
-    margin-bottom: $baseLineInEms;
+    @include em('margin-bottom', $baseLineInEms);
     @include clearfix;
 }
 .navbar-left {
@@ -19,11 +19,11 @@
 }
 .navbar ul li {
     float: left;
-    margin-right: $baseLineInEms;
+    @include em('margin-right', $baseLineInEms);
 }
 .navbar-right ul li {
     margin-right: 0;
-    margin-left: $baseLineInEms;
+    @include em('margin-left', $baseLineInEms);
 }
 .navbar ul li a,
 .navbar ul li span {
@@ -60,7 +60,7 @@
 
 /* Vertical */
 .nav {
-    margin-bottom: $baseLineInEms;
+    @include em('margin-bottom', $baseLineInEms);
 }
 .nav ul {
     list-style: none;
@@ -138,7 +138,7 @@
 
 /* Breadcrumbs */
 .breadcrumbs {
-    margin-bottom: $baseLineInEms;
+    @include em('margin-bottom', $baseLineInEms);
     @include clearfix;
 }
 .breadcrumbs ul {

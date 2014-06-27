@@ -279,7 +279,7 @@ h5 {
 h6 {
   font-size: 12px;
   text-transform: uppercase;
-  line-height: 1.6;
+  line-height: 1.6em;
   margin-bottom: .25em; }
 
 /* =Subheading
@@ -330,7 +330,7 @@ dt,
 blockquote,
 td,
 th {
-  line-height: 1.6; }
+  line-height: 1.6em; }
 
 ul,
 ol,
@@ -338,7 +338,7 @@ ul ul,
 ol ol,
 ul ol,
 ol ul {
-  margin: 0 0 0 1.6; }
+  margin: 0em 0em 0em 1.6em; }
 
 ol ol li {
   list-style-type: lower-alpha; }
@@ -358,7 +358,7 @@ form,
 fieldset,
 figure,
 address {
-  margin-bottom: 1.6; }
+  margin-bottom: 1.6em; }
 
 address {
   font-style: normal; }
@@ -373,7 +373,7 @@ blockquote {
   font-size: 16px;
   font-style: italic;
   position: relative;
-  padding-left: 1.6;
+  padding-left: 1.6em;
   margin-left: 0;
   border-left: 2px solid #dbdada; }
   blockquote p {
@@ -439,7 +439,7 @@ pre {
   line-height: 1.45em;
   color: #333333;
   background: #f6f6f6;
-  padding: 1.6;
+  padding: 1.6em;
   overflow: auto; }
 
 code {
@@ -454,7 +454,7 @@ pre code {
   border: none;
   padding: 0;
   background: none;
-  line-height: 1.6; }
+  line-height: 1.6em; }
 
 kbd {
   padding: 2px 6px 1px 6px;
@@ -520,8 +520,8 @@ textarea {
   line-height: 1.35em; }
 
 fieldset {
-  padding: 1.6;
-  margin-bottom: 1.6;
+  padding: 1.6em;
+  margin-bottom: 1.6em;
   border: 1px solid #dbdada; }
 
 legend {
@@ -1015,7 +1015,7 @@ select.unit-100 {
 -----------------------------------------------------------------------------*/
 /* NavBar */
 .navbar {
-  margin-bottom: 1.6; }
+  margin-bottom: 1.6em; }
   .navbar:after {
     content: "";
     display: table;
@@ -1037,11 +1037,11 @@ select.unit-100 {
 
 .navbar ul li {
   float: left;
-  margin-right: 1.6; }
+  margin-right: 1.6em; }
 
 .navbar-right ul li {
   margin-right: 0;
-  margin-left: 1.6; }
+  margin-left: 1.6em; }
 
 .navbar ul li a,
 .navbar ul li span {
@@ -1074,7 +1074,7 @@ select.unit-100 {
 
 /* Vertical */
 .nav {
-  margin-bottom: 1.6; }
+  margin-bottom: 1.6em; }
 
 .nav ul {
   list-style: none;
@@ -1147,7 +1147,7 @@ select.unit-100 {
 
 /* Breadcrumbs */
 .breadcrumbs {
-  margin-bottom: 1.6; }
+  margin-bottom: 1.6em; }
   .breadcrumbs:after {
     content: "";
     display: table;
@@ -1282,7 +1282,7 @@ table.table-hovered tbody tr:hover td {
 .table-container {
   width: 100%;
   overflow: auto;
-  margin-bottom: 1.6; }
+  margin-bottom: 1.6em; }
   .table-container table {
     margin-bottom: 0; }
   .table-container::-webkit-scrollbar {
@@ -1711,7 +1711,7 @@ input[type="submit"].btn {
   height: 0;
   padding-bottom: 56.25%;
   position: relative;
-  margin-bottom: 1.6; }
+  margin-bottom: 1.6em; }
   .video-wrapper iframe, .video-wrapper object, .video-wrapper embed {
     position: absolute;
     top: 0;

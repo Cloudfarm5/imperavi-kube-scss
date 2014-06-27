@@ -11,7 +11,7 @@ Hereâ€™s your most advanced and flexible CSS-framework. Take a look. Kube doesnâ
 
 - Just clone this repos on your local machine;
 - Launch from terminal:
-    - Dev version: *sass --watch scss/kube.scss:css/kube.min.css --scss*
+    - Dev version: *sass --watch scss/kube.scss:css/kube.css --scss*
     - Minified version: *sass --watch scss/kube.scss:css/kube.min.css --style compressed --scss*
 
 
