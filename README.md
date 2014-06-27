@@ -14,7 +14,6 @@ Hereâ€™s your most advanced and flexible CSS-framework. Take a look. Kube doesnâ
     - Dev version: *sass --watch scss/kube.scss:css/kube.css --scss*
     - Minified version: *sass --watch scss/kube.scss:css/kube.min.css --style compressed --scss*
 
-
 ##[Documentation and examples](http://imperavi.com/kube/)
 
 - [Details](http://imperavi.com/kube/)
