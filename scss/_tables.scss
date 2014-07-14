@@ -25,7 +25,7 @@ table.table-hovered tbody tr:hover td {
 .table-container {
     width: 100%;
     overflow: auto;
-    @include em('margin-bottom', $baseLineInEms);
+    @include rem('margin-bottom', $baseLineInEms);
     & table {
         margin-bottom: 0;
     }

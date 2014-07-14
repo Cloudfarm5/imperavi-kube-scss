@@ -12,7 +12,7 @@
     & li {
         height: auto;
         float: left;
-        @include em('margin-bottom', $baseLineInEms);
+        @include rem('margin-bottom', $baseLineInEms);
         margin-left: $gridGutterWidth / ($gridWidth / 100) * 1%;
     }
 }
@@ -37,7 +37,7 @@
     .blocks-5,
     .blocks-6 {
         margin-left: 0;
-        @include em('margin-bottom', $baseLineInEms);
+        @include rem('margin-bottom', $baseLineInEms);
     }
 
     .blocks-2 > li,

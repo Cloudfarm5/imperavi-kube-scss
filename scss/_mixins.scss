@@ -10,28 +10,47 @@
     @return ($num / ($num * 0 + 1));
 }
 
-@mixin em($property, $values...) {
-  $max: length($values);
-  $emValues: '';
+@mixin rem($property, $values...) {
+    $max: length($values);
+    $pxValues: '';
+    $remValues: '';
 
-  @for $i from 1 through $max {
-    @if nth($values, $i) != 'important' {
-      $value: strip-unit(nth($values, $i));
-      $emValues: #{$emValues + $value}em;
+    @for $i from 1 through $max {
+        @if nth($values, $i) != 'important' {
 
-      @if $i < $max {
-        $emValues: #{$emValues + " "};
-      }
+            // $value: strip-unit(nth($values, $i));
+            $value: nth($values, $i);
+
+            @if unitless($value) == true {
+                $pxRounded: round(strip-unit($value) * 16);
+                $pxValues: #{$pxValues + $pxRounded}px;
+
+            } @else {
+
+                $value: strip-unit($value);
+                $pxRounded: $value;
+                $pxValues: #{$pxValues + $pxRounded}px;
+
+            }
+
+            $remValues: #{$remValues + $value}rem;
+        }
+
+        @if $i < $max {
+            $pxValues: #{$pxValues + " "};
+            $remValues: #{$remValues + " "};
+        }
+
+        @if $i == $max {
+            @if nth($values, $i) == 'important' {
+                $pxValues: #{$pxValues + " !important"};
+                $remValues: #{$remValues + " !important"};
+            }
+        }
     }
 
-    @if $i == $max {
-      @if nth($values, $i) == 'important' {
-        $emValues: #{$emValues + " !important"};
-      }
-    }
-  }
-
-  #{$property}: $emValues;
+    #{$property}: $pxValues;
+    #{$property}: $remValues;
 }
 
 @mixin clearfix() {
