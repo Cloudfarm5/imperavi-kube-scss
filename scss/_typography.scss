@@ -4,7 +4,7 @@ body {
     background: $backgroundBody;
     color: $colorBody;
     font-size: $baseFontSize + 0px;
-    @include em('line-height', $baseLineInEms);
+    @include rem('line-height', $baseLineInEms);
     font-family: $baseFontFamily;
 }
 a {
@@ -48,13 +48,13 @@ h4 {
 }
 h5 {
     font-size: $h5FontSize;
-    @include em('line-height', $baseLineInEms);
+    @include rem('line-height', $baseLineInEms);
     margin-bottom: .25em;
 }
 h6 {
     font-size: $h6FontSize;
     text-transform: uppercase;
-    @include em('line-height', $baseLineInEms);
+    @include rem('line-height', $baseLineInEms);
     margin-bottom: .25em;
 }
 
@@ -107,7 +107,7 @@ dt,
 blockquote,
 td,
 th {
-    @include em('line-height', $baseLineInEms);
+    @include rem('line-height', $baseLineInEms);
 }
 ul,
 ol,
@@ -115,7 +115,7 @@ ul ul,
 ol ol,
 ul ol,
 ol ul {
-    @include em('margin', 0, 0, 0, $baseLineInEms);
+    @include rem('margin', 0, 0, 0, $baseLineInEms);
 }
 ol ol li {
     list-style-type: lower-alpha;
@@ -135,7 +135,7 @@ form,
 fieldset,
 figure,
 address {
-    @include em('margin-bottom', $baseLineInEms);
+    @include rem('margin-bottom', $baseLineInEms);
 }
 address {
     font-style: normal;
@@ -150,7 +150,7 @@ blockquote {
     font-size: $quoteFontSize;
     font-style: italic;
     position: relative;
-    @include em('padding-left', $baseLineInEms);
+    @include rem('padding-left', $baseLineInEms);
     margin-left: 0;
     border-left: 2px solid #dbdada;
     & p {
@@ -217,7 +217,7 @@ pre {
     line-height: 1.45em;
     color: $colorBody;
     background: #f6f6f6;
-    @include em('padding', $baseLineInEms);
+    @include rem('padding', $baseLineInEms);
     overflow: auto;
 }
 code {
@@ -232,7 +232,7 @@ pre code {
     border: none;
     padding: 0;
     background: none;
-    @include em('line-height', $baseLineInEms);
+    @include rem('line-height', $baseLineInEms);
 }
 kbd {
     padding: 2px 6px 1px 6px;
@@ -298,8 +298,8 @@ textarea {
     line-height: 1.35em;
 }
 fieldset {
-    @include em('padding', $baseLineInEms);
-    @include em('margin-bottom', $baseLineInEms);
+    @include rem('padding', $baseLineInEms);
+    @include rem('margin-bottom', $baseLineInEms);
     border: 1px solid #dbdada;
 }
 legend {
