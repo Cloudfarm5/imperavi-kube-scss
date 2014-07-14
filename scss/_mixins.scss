@@ -22,18 +22,21 @@
             $value: nth($values, $i);
 
             @if unitless($value) == true {
+
                 $pxRounded: round(strip-unit($value) * 16);
                 $pxValues: #{$pxValues + $pxRounded}px;
+                $remValues: #{$remValues + $value}rem;
 
             } @else {
 
                 $value: strip-unit($value);
                 $pxRounded: $value;
                 $pxValues: #{$pxValues + $pxRounded}px;
+                // $remVal: round($value / 16);
+                $remVal: ($value / 16);
+                $remValues: #{$remValues + $remVal}rem;
 
             }
-
-            $remValues: #{$remValues + $value}rem;
         }
 
         @if $i < $max {
